@@ -45,7 +45,4 @@ public class LinkController {
         linkService.remove(link);
         return "redirect:/links";
     }
-
-
-
 }
