@@ -1,0 +1,89 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+</head>
+<body>
+<div th:fragment="navigation-css">
+    <!-- this is header-meta -->
+    <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/" th:href="@{/}">Pechkin v.0.0.01</a>
+        </div>
+
+        <ul class="nav navbar-top-links navbar-right">
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                    <i class="fa fa-bell fa-fw"></i> <i class="fa fa-caret-down"></i>
+                </a>
+                <ul class="dropdown-menu dropdown-alerts">
+                    <li>
+                        <a href="#">
+                            <div>
+                                <i class="fa fa-comment fa-fw"></i> (1) Новые сообщения
+                                <span class="pull-right text-muted small">4 минуты назад</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="divider"></li>
+                    <li>
+                        <a class="text-center" href="#">
+                            <strong>Просмотреть все оповещения</strong>
+                            <i class="fa fa-angle-right"></i>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                    <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
+                </a>
+                <ul class="dropdown-menu dropdown-user">
+                    <li><a href="#"><i class="fa fa-user fa-fw"></i> Профиль пользователя</a>
+                    </li>
+                    <li><a href="#"><i class="fa fa-gear fa-fw"></i> Настройки</a>
+                    </li>
+                    <li class="divider"></li>
+                    <li><a href="pages/login.html"><i class="fa fa-sign-out fa-fw"></i> Выход</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+        <div class="navbar-default sidebar" role="navigation">
+            <div class="sidebar-nav navbar-collapse">
+                <ul class="nav" id="side-menu">
+                    <li>
+                        <a href="/blank.html" th:href="@{/blank}"><i class="fa fa-comments-o fa-fw"></i> Чаты<span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a href="/blank.html" th:href="@{/blank}"><i class="fa fa-user fa-fw" aria-hidden="true"></i> Новый чат</a>
+                            </li>
+                            <li>
+                                <a href="/blank.html" th:href="@{/blank}"><i class="fa fa-users fa-fw" aria-hidden="true"></i> Новый групповой чат</a>
+                            </li>
+                            <li>
+                                <a href="/blank.html" th:href="@{/blank}"><i class="fa fa-address-book-o fa-fw" aria-hidden="true"></i> Контакты</a>
+                            </li>
+                            <li>
+                                <a href="/blank.html" th:href="@{/blank}"><i class="fa fa-cog fa-fw" aria-hidden="true"></i> Настройки</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="/links.html" th:href="@{/links}"><i class="fa fa-link fa-fw"></i> Ссылки</a>
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+</div>
+
+</body>
+</html>
