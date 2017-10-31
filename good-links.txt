@@ -2,3 +2,4 @@ http://www.mkyong.com/spring-boot/spring-boot-spring-security-thymeleaf-example/
 http://www.codesenior.com/en/tutorial/Spring-Generic-DAO-and-Generic-Service-Implementation - GenericDAO
 https://github.com/neocorp/spring-mvc-thymeleaf-crud - Good Simple CRUD with Thymeleaf
 https://blackrockdigital.github.io/startbootstrap-sb-admin-2/pages/index.html - StartBootstrap Admin Template
+https://developers.facebook.com/apps/309619382850214/fb-login/ - Facebook app
