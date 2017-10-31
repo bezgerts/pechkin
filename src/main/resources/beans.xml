@@ -10,7 +10,7 @@
 
     <context:annotation-config />
     <context:component-scan base-package="me.bezgerts.pechkin" />
-    <context:property-placeholder location="application.properties" />
+    <context:property-placeholder location="application.yaml" />
     <context:property-placeholder location="db.properties" />
     <bean class="org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor" />
 

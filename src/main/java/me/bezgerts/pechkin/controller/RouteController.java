@@ -15,9 +15,9 @@ public class RouteController {
         return "/index";
     }
 
-    @GetMapping("/login")
+    @GetMapping("/oldLogin")
     public String login() {
-        return "/login";
+        return "/oldLogin";
     }
 
     @GetMapping("/blank")

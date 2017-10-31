@@ -19,7 +19,7 @@ import java.util.Properties;
 
 @Configuration
 @EnableTransactionManagement
-@PropertySource("classpath:application.properties")
+@PropertySource("classpath:application.yaml")
 @PropertySource("classpath:db.properties")
 public class AppConfig {
 
