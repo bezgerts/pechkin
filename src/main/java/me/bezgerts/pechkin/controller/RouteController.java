@@ -5,14 +5,10 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
 public class RouteController {
-    @GetMapping("/")
-    public String main() {
-        return "/main";
-    }
 
-    @GetMapping("/index")
+    @GetMapping("/old_index")
     public String home() {
-        return "/index";
+        return "/old_index";
     }
 
     @GetMapping("/oldLogin")
