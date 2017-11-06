@@ -38,6 +38,12 @@
                         <p>
                             Logged user name:
                             <span th:text="${#authentication.userAuthentication.details.name}">name</span>
+                            <form role="form" th:action="@{/logout}" method="post">
+                                <div>
+                                    <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
+                                    <button type="submit" class="btn btn-primary">Logout</button>
+                                </div>
+                            </form>
                         </p>
                     </div>
                     <div sec:authorize="hasRole('ROLE_ADMIN')">
